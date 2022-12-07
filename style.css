@@ -1,0 +1,96 @@
+*{
+    margin: o;
+    padding: 0;
+}
+body{
+    background: rgb(54, 73, 82);
+}
+.card{
+    position: absolute;
+    width: 30%;
+    border: 1px solid rgb(255, 255, 255);
+    height: 50px;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 50px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+ h3{
+   
+    margin-top: 4%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white; 
+    cursor: pointer;
+    font-size: 150%;
+    letter-spacing: 2px;
+   
+    
+}
+.card:hover{
+    background-color: rgba(0,0,0,0.2);
+}
+.popUpBox{
+    background-color: rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    width: 60%;
+    height: 100%;
+    min-width: 450px;
+    position: relative;
+    margin: 50px auto;
+    padding: 50px 20px;
+    border-radius: 10px;
+    display: none;
+    z-index: 1;
+
+    animation-name: animatetop;
+    animation-duration: 0.9s
+}
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+
+input{
+    display: none;
+}
+label{
+    display: block;
+    position: relative;
+    background-color: blue;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    width: 300px;
+    padding: 18px 0;
+    margin: auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.popUpBox p{
+    text-align: center;
+    color: white;
+}
+#images{
+    width: 90%;
+   margin: auto;
+    border: 1px solid black;
+    position: relative;
+}
+.close{
+color: white;
+  float: right;
+  margin-top: -50px;
+ margin-right: -15px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.close:hover{
+    color: rgb(255, 0, 0);
+}
